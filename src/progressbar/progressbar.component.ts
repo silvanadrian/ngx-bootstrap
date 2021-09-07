@@ -30,6 +30,9 @@ export class ProgressbarComponent {
   /** provide one of the four supported contextual classes: `success`, `info`, `warning`, `danger` */
   @Input() type?: ProgressbarType;
 
+  /** provide a aria-label for accessibility, default is 'progressbar' */
+  @Input() ariaLabel = 'progressbar';
+
   /** current value of progress bar. Could be a number or array of objects
    * like {"value":15,"type":"info","label":"15 %"}
    */
